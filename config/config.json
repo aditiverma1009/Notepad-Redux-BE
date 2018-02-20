@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "aditi",
+    "password": "root",
+    "database": "db_notes",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "aditi",
+    "password": "root",
+    "database": "db_notes",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "db_notes",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
