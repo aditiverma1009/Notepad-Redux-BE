@@ -1,31 +1,36 @@
 {
-  "name": "notepad-backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "directories": {
-    "test": "test",
-    "start": "node server.js"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "react-notepad",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-eslint": "^8.2.1",
     "hapi": "^16.6.2",
-    "node": "^9.5.0",
     "pg": "^7.4.1",
-    "sequelize": "^4.33.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.34.1",
     "sequelize-cli": "^4.0.0"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
   "devDependencies": {
-    "eslint": "^4.18.0",
+    "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "jest": "^22.3.0"
+    "eslint-plugin-react": "^7.6.1"
   },
-  "description": ""
+  "proxy": "http://localhost:8001"
 }

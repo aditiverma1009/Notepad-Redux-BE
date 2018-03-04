@@ -1,9 +1,15 @@
+const Models = require('../../models');
+
 const handlerfn = (request, response) => {
-  response('getget');
+  console.log('GET /sync');
+  Models.notes.findAll().then((notes) => {
+    // console.log(notes);
+    response(notes);
+  });
 };
 
 module.exports = [{
-  path: '/setData',
+  path: '/getData',
   method: 'GET',
   handler: handlerfn,
 }];

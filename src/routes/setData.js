@@ -5,8 +5,8 @@ const handler1 = (request, response) => {
   const notes = request.payload;
   const newnotes = notes.map(ele => ({
     noteid: ele.noteid,
-    notetitle: ele.valueNoteTitle,
-    notecontent: ele.valueNote,
+    notetitle: ele.notetitle,
+    notecontent: ele.notecontent,
   }));
   console.log(newnotes);
   Models.notes.destroy({ truncate: true });
